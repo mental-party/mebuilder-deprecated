@@ -10,3 +10,18 @@ A Simple Generic Java Object Builder
         .build();
         
 </code>
+
+
+#For Developer
+Build and generate publication.
+
+<code>
+ ./gradlew clean build generatePomFileForBintrayPublicationPublication 
+</code>
+
+
+### After publish to bintray
+
+<code>
+./gradlew -Pbintray-user=coskundeniz -Pbintray-key=**************** bintrayUpload -x clean
+</code>
