@@ -16,7 +16,7 @@ A Simple Generic Java Object Builder
 Build and generate publication.
 
 <code>
- ./gradlew clean build generatePomFileForBintrayPublicationPublication 
+ ./gradlew clean build generatePomFileForBintrayPublicationPublication -DbambooPublishNumber=0
 </code>
 
 
