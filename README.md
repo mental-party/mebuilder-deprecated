@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mental-party/mebuilder.svg?branch=master)](https://travis-ci.org/mental-party/mebuilder)
+
 # MeBuilder
 A Simple Generic Java Object Builder
 
