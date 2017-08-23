@@ -9,7 +9,7 @@ def repoUrl = 'https://github.com/mental-party/mebuilder'
 def repoVcsUrl = 'https://github.com/mental-party/mebuilder.git'
 def releaseVersion = '2'
 def publishVersion = releaseVersion + '.' + (System.getenv("TRAVIS_BUILD_NUMBER") ?: '0')
-def packageLabels = ['spring-boot', 'configurations', 'java']
+def packageLabels = ['generic-builder', 'java']
 def packageGroupId = 'com.teammental'
 def packageArtifactId = 'mebuilder'
 
