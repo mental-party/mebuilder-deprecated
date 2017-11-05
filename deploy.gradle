@@ -1,3 +1,12 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+    }
+}
+
 apply plugin: 'com.jfrog.bintray'
 apply plugin: 'maven-publish'
 
@@ -7,8 +16,7 @@ def packageName = 'com.teammental.mebuilder'
 def packageTitle = 'Mental Builder'
 def repoUrl = 'https://github.com/mental-party/mebuilder'
 def repoVcsUrl = 'https://github.com/mental-party/mebuilder.git'
-def releaseVersion = '2'
-def publishVersion = releaseVersion + '.' + (System.getenv("TRAVIS_BUILD_NUMBER") ?: '0')
+def publishVersion = System.getProperty('bambooPublishNumber')
 def packageLabels = ['generic-builder', 'java']
 def packageGroupId = 'com.teammental'
 def packageArtifactId = 'mebuilder'
